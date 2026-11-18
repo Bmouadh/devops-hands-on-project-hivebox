@@ -52,4 +52,20 @@ Here is a pre-start checklist:
 
 ## Implementation
 
-** ADD YOUR IMPLEMENTATION DOCUMENTATION HERE **
+### Build the container
+
+```bash
+docker build -t hivebox:latest -n hivebox  .
+```
+
+### Start the container
+
+```bash
+docker run -d --name hivebox hivebox:latest
+```
+
+### Check the log of the container
+
+```bash
+docker logs -f hivebox
+```
